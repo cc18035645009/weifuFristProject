@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{height: 100%;width: 100%;word-wrap:break-word;}
+*{margin: 0;padding: 0;}
+.tl{text-align: left}
+.tc{text-align: center}
+.tr{text-align: right}
+.vm{vertical-align: middle;}
+.fl{float: left;}
+.fr{float: right;}
+.mauto{margin: 0 auto;}
+/*字体大小*/
+.fz24{font-size: 24px;}
+.fz18{font-size: 18px;}
+.fz16{font-size: 16px;}
+.fz14{font-size: 14px;}
+.fz12{font-size: 12px;}
+.fw{font-weight: 600;}
+
+/*外边距*/
+.mr5{margin-right: 5px}
+.mr10{margin-right: 10px}
+.mr15{margin-right: 15px}
+.mr20{margin-right: 20px}
+
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml30{margin-left: 30px}
+
+.mt40{margin-top:40px;}
+.mt30{margin-top: 30px;}
+.mt20{margin-top: 20px;}
+.mt15{margin-top: 15px;}
+.mt10{margin-top: 10px;}
+.mt5{margin-top: 5px;}
+
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.mb40{margin-bottom: 40px;}
+
+/*宽度*/
+.w50{max-width: 50px}
+.w70{max-width: 70px}
+.w80{max-width: 80px;}
+.w100{max-width: 100px;}
+.w120{max-width: 120px;}
+.w150{max-width: 150px;}
+.w240{max-width: 240px;}
+.w8p{width: 80%;}
+.w85p{width: 85%;}
+.w9p{width: 90%;}
+.w10p{width: 100%;}
+
+.h100{height: 100%;}
+/*内边距*/
+.pt5{padding-top: 5px;}
+.pt10{padding-top: 10px;}
+.pt15{padding-top: 15px;}
+.pt20{padding-top: 20px;}
+.pt30{padding-top: 30px;}
+
+.pb5{padding-bottom: 5px;}
+.pb10{padding-bottom: 10px;}
+.pb15{padding-bottom: 15px;}
+.pb20{padding-bottom: 20px;}
+.pb30{padding-bottom: 30px;}
+
+.pl5{padding-left: 5px;}
+.pl10{padding-left: 10px;}
+.pl15{padding-left: 15px;}
+.pl20{padding-left: 20px;}
+.pl30{padding-left: 30px;}
+
+.pr5{padding-right: 5px;}
+.pr10{padding-right: 10px;}
+.pr15{padding-right: 15px;}
+.pr20{padding-right: 20px;}
+
+.lh20{line-height: 20px;}
+.lh27{line-height: 27px;}
+.lh30{line-height: 30px;}
+.lh40{line-height: 40px;}
+
+/*背景颜色*/
+.bgee{background: #eee;}
+.bgf{background: #fff;}
+.bgea{background: #EAEAEA;}
+.bgef{background: #409EFF}
+.bg57{background: #4d4d4d57}
+
+/*字体颜色*/
+.colorW{color: white}
+.color3{color: #333}
+.color4{color: #666}
+.color9{color: #999}
+.colorblue{color:rgb(64, 158, 255)}
+
+/*边框*/
+.bt{border-bottom: 1px solid #eee}
+.hide{display: none}
+.show{display: block}
+.inline{display: inline-block;}
+.indent2{text-indent: 2em;}
+.txt3{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.cursor{cursor: pointer;}
+
+.flex{display: flex;}
+.flex1{flex:1;}
+.colu{flex-direction: column;}
+.justc{justify-content: center;}
+.alic{align-items: center}
+.justs{justify-content: space-between}
+.justsa{justify-content: space-around}
+.wrap{flex-wrap:wrap}
+
+.posAbs{position: absolute;}
+.posRel{position: relative;}
+.posFix{position: fixed;}
+.top0{top:0;}
+.bottom0{bottom:0;}
+.left0{left:0;}
+.right0{right: 0;}
+
+.borBox{box-sizing: border-box;}
+.borderte0{border-top:1px solid #e0e0e0; }
+.borderbe0{border-bottom:1px solid #e0e0e0; }
+.borRad{border-radius: 5px;}
+.boxSha{box-shadow: 0 0.01rem 0.2rem 0.05rem #eee;}
+.over{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.overH{overflow: hidden}
+.clear{zoom:1;}
+.clear:after{content: "\0020";display: block;height: 0;clear: both;}
+.mask{width: 100%;height: 100%;background: rgba(120, 220, 220, 0.5);position: fixed;z-index: 5;top: 0;left: 0;}
+.noClick{pointer-events: none;}
+
+li{list-style:none;}
+a{text-decoration:none;color:#555;}
+a:hover{color:#555;}
+img{display:block;vertical-align:middle;}
+a img,fieldset{border:0;}
+i,em{font-style:normal}
+b,strong,th{font-weight:100;}
+input,textarea,select{outline:none;}
+textarea{resize:none;}
+table{border-collapse:collapse;}
+[v-cloak] {
+    display: none;
+}
+
+/*全局*/
+.content{width: 90%; margin: 0 auto;}
+.cue {
+  left: -2px;
+  top: 6px;
+  background: #F2994A;
+}
+.cue::before{
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 12px solid #F2994A;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  right: -22px;
+  top: 1px;
+}
+.no {
+  left: -2px;
+  top: 6px;
+  background: #BDBDBD;
+}
+.no::before{
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 12px solid #BDBDBD;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  right: -22px;
+  top: 1px;
+}
